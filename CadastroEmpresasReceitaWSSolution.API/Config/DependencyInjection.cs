@@ -40,7 +40,6 @@ namespace CadastroEmpresasReceitaWSSolution.API.Config
             services.AddScoped<IEmpresaRepository, EmpresaRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
-            services.AddScoped<IRefreshTokenStore, RefreshTokenStoreDb>();
 
             // Current User
             services.AddHttpContextAccessor();
