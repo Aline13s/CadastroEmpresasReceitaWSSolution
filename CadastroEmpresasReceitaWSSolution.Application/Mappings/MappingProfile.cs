@@ -10,10 +10,8 @@ namespace CadastroEmpresasReceitaWSSolution.Application.Mappings
     {
         public MappingProfile()
         {
-            // Empresa ↔ EmpresaDto (bidirecional)
             CreateMap<Empresa, EmpresaDto>().ReverseMap();
 
-            // Value Objects ↔ Dtos (bidirecionais)
             CreateMap<Endereco, EnderecoDto>().ReverseMap();
             CreateMap<AtividadePrincipal, AtividadePrincipalDto>().ReverseMap();
             CreateMap<AtividadeSecundaria, AtividadeSecundariaDto>().ReverseMap();
@@ -22,7 +20,6 @@ namespace CadastroEmpresasReceitaWSSolution.Application.Mappings
             CreateMap<Simei, SimeiDto>().ReverseMap();
             CreateMap<Billing, BillingDto>().ReverseMap();
 
-            // ReceitaWsResponse → Empresa
             CreateMap<ReceitaWsResponse, Empresa>()
                 .ForMember(dest => dest.Id, opt => opt.Ignore())
                 .ForMember(dest => dest.UsuarioId, opt => opt.Ignore())

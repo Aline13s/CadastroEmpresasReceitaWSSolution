@@ -58,7 +58,7 @@ namespace CadastroEmpresasReceitaWSSolution.Tests.Application.EmpresaTests
             var empresa = new Empresa
             {
                 Id = Guid.NewGuid(),
-                UsuarioId = "outro-user" // Usuario diferente do logado
+                UsuarioId = "outro-user"
             };
 
             _empresaRepoMock.Setup(r => r.ObterPorIdAsync(empresa.Id, default))

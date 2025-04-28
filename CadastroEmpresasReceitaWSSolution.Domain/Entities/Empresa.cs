@@ -6,7 +6,7 @@ namespace CadastroEmpresasReceitaWSSolution.Domain.Entities
     public partial class Empresa
     {
         public Guid Id { get; set; }
-        public string Cnpj { get; set; } = null!; // CNPJ sempre obrigatório
+        public string Cnpj { get; set; } = null!;
 
         public string? Tipo { get; set; }
         public string? Porte { get; set; }
