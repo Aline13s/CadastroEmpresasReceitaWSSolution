@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CadastroEmpresasReceitaWSSolution.API.props" />
-</Project>
